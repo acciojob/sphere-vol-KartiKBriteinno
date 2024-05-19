@@ -19,5 +19,9 @@ function volume_sphere() {
   document.getElementById("output").value = volume.toFixed(4);
 }
 
+document.getElementById("sphereForm").onsubmit = function() {
+    volume_sphere();
+    return false;
+};
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
