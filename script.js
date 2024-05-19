@@ -13,7 +13,7 @@ function calculateVolume() {
   var radius = parseFloat(radiusInput);
   
   // Calculate the volume of the sphere
-  var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+  var volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
   
   // Display the calculated volume in the designated output field
   document.getElementById("output").value = volume.toFixed(4);
