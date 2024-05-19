@@ -1,4 +1,4 @@
-function volume_sphere() {
+function calculateVolume() {
   // Retrieve the radius value entered by the user
   var radiusInput = document.getElementById("radius").value;
   
@@ -18,10 +18,3 @@ function volume_sphere() {
   // Display the calculated volume in the designated output field
   document.getElementById("output").value = volume.toFixed(4);
 }
-
-document.getElementById("sphereForm").onsubmit = function() {
-    volume_sphere();
-    return false;
-};
-
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
